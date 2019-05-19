@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GoT Hangman
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Jumbotron w/title -->
+        <div id="game" class="jumbotron">
+            <div class="container">
+                <h1 class="text-center">Crystal Collector</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <!-- Instructions Card -->
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="text-center">Instructions</h1>
+                </div>
+                <div class="card-body">
+                    <p>You will be given a random number at the start of the game. The crystals wills each have a
+                        different number assigned to them. By clicking on the crystals below, you will add value to your
+                        total score. You win by reaching the exact total of the random number. You lose if you go over
+                        the exact total of the random number. Everytime you win, lose, or reload the page, the crystals
+                        are given a new value. Good luck!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <!-- Random Num card -->
+        <div class="col lg 3">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="text-center">Random Number</h1>
+                </div>
+                <div class="card-body">
+                    <h3 class="text-center" id="randomNumber">1</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Your Score Card -->
+        <div class="col lg 3">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="text-center">Your Score</h1>
+                </div>
+                <div class="card-body">
+                    <h3 class="text-center" id="yourScore">1</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Crystals -->
+        <div class="col lg 6">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="text-center">Crystals</h1>
+                </div>
+                <div class="card-body">
+                    <img src="assets/images/blue.jpg" alt="" id="blue">
+                    <img src="assets/images/purple.png" alt="" id="purple">
+                    <img src="assets/images/brown.jpg" alt="" id="brown">
+                    <img src="assets/images/green.png" alt="" id="green">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Counter row -->
+    <div class="row">
+        <div class="col lg 6">
+            <!-- Wins -->
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="text-center">Wins</h1>
+                </div>
+                <div class="card-body">
+                    <h3 class="text-center" id="yourScore">1</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col lg 6">
+                <div class="card">
+                        <div class="card-header">
+                            <h1 class="text-center">Losses</h1>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="text-center" id="yourScore">1</h3>
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
